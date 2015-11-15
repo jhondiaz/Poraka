@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout1"
+        android:background="#fff">
+        <ImageView
+            android:src="@drawable/ic_stat_icon"
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+            android:id="@+id/ImgPro"
+            android:layout_marginBottom="10dp" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/linearLayout2"
+            android:paddingTop="5dp"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp">
+            <TextView
+                android:text="Celular Samsung Galaxy S6 Edge Plus - Pantalla 5.7&quot; - 32GB - Negro"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/TxtProduct"
+                android:layout_marginBottom="5dp"
+                android:textColor="@android:color/background_dark" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayout5"
+                android:layout_marginBottom="0dp">
+                <TextView
+                    android:text="----:----"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:id="@+id/TxtSale"
+                    android:textColor="@color/FondoAzul"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/ic_action_action_shopping_cart"
+                    android:gravity="center" />
+                <TextView
+                    android:text="----:----"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:id="@+id/TxtLike"
+                    android:textColor="@color/FondoAzul"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/ic_action_action_thumb"
+                    android:gravity="center" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout4">
+        <TextView
+            android:text="Consultando mas Ofertas..."
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/textView5"
+            android:padding="10dp"
+            android:background="@drawable/bntverde"
+            android:gravity="center_vertical"
+            android:drawableLeft="@drawable/ic_action_action_find_replace"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginBottom="2dp" />
+        <ProgressBar
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/progressBar1"
+            android:background="@drawable/bntverde"
+            android:layout_marginBottom="2dp"
+            android:paddingRight="10dp" />
+    </LinearLayout>
+    <ListView
+        android:minWidth="25px"
+        android:minHeight="350px"
+        android:layout_width="match_parent"
+        android:id="@+id/ListVOfertas"
+        android:dividerHeight="5dp"
+        android:footerDividersEnabled="false"
+        android:listSelector="@drawable/list_selector"
+        android:layout_height="550dp"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp"
+        android:layout_weight="1"
+        android:overScrollMode="always"
+        android:fadeScrollbars="true"
+        android:scrollbars="vertical" />
+</LinearLayout>

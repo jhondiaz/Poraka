@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="20dp"
+    style="@style/StyleLayout">
+    <TextView
+        android:text="Nuevo Usuario"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView1"
+        android:gravity="center"
+        android:textColor="@color/FondoAzul" />
+    <EditText
+        android:inputType="textPersonName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TxtNombres"
+        android:hint="Nombres"
+        android:layout_marginTop="20dp"
+        android:textColor="@android:color/background_dark" />
+    <EditText
+        android:inputType="textEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TxtEmail"
+        android:hint="Email"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/background_dark" />
+    <EditText
+        android:inputType="numberSigned"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TxtCelular"
+        android:hint="Celular"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/background_dark" />
+    <EditText
+        android:inputType="numberPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TxtPwd"
+        android:hint="Contraseña"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/background_dark" />
+    <Button
+        android:text="Registrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/BtnRegistar"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bntverde" />
+</LinearLayout>

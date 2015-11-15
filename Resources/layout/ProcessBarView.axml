@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff"
+    android:paddingLeft="10dp">
+    <ImageView
+        android:src="@drawable/user"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/ImgLogin" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/linearLayout1"
+        android:layout_weight="1"
+        android:paddingLeft="5dp"
+        android:gravity="center_vertical">
+        <TextView
+            android:text="ENTRAR"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/TxtEntrar"
+            android:gravity="left"
+            android:textColor="@color/FondoAzul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="Contact"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/TxtContact" />
+    </LinearLayout>
+</LinearLayout>

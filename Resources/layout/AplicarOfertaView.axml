@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="5dp"
+    android:background="@color/FondoBlando">
+    <TextView
+        android:text="Celular Samsung Galaxy S6 Edge Plus - Pantalla 5.7&quot; - 32GB - Negro"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TxtAProduct"
+        android:gravity="center_vertical"
+        android:textColor="@color/FondoAzul"
+        android:padding="5dp"
+        android:layout_marginBottom="5dp" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout1">
+        <ImageView
+            android:src="@drawable/icon"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/ImgAProduct" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/linearLayout2">
+            <CheckBox
+                android:text="Envio Gratis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ChboxAEnvio"
+                android:textColor="@android:color/holo_blue_dark" />
+            <CheckBox
+                android:text="Garantia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ChBoxAGarantia"
+                android:textColor="@android:color/holo_green_dark" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout3">
+        <TextView
+            android:text="Valor Oferta:"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/textView2"
+            android:gravity="center_vertical"
+            android:textColor="@color/FondoAzul" />
+        <EditText
+            android:inputType="numberDecimal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/TxtAValorOferta"
+            android:gravity="right"
+            android:layout_marginLeft="5dp"
+            android:textColor="@android:color/black"
+            android:cursorVisible="true" />
+    </LinearLayout>
+</LinearLayout>

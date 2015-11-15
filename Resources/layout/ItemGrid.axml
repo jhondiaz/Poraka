@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/container_dropshadow">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/LyItem"
+        android:background="@color/FondoAzul"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:src="@android:drawable/stat_notify_sync"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ImgView"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:cropToPadding="true"
+            android:background="@color/background" />
+        <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/PBar"
+            android:indeterminateBehavior="cycle" />
+        <TextView
+            android:text="Jose david"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/TxtName"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/background_light" />
+        <TextView
+            android:text="Detail"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/TxtDetail"
+            android:gravity="center"
+            android:textColor="@android:color/holo_green_light"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp" />
+    </LinearLayout>
+</LinearLayout>

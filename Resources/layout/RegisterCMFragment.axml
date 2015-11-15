@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="20dp"
+    style="@style/StyleLayout">
+    <ScrollView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView1">
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout1">
+            <TextView
+                android:text="Nuevo Vendedor"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView1"
+                android:gravity="center"
+                android:textColor="@color/FondoAzul" />
+            <EditText
+                android:inputType="numberSigned"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/TxtNit"
+                android:hint="Nit"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/FondoAzul" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/TxtRSocial"
+                android:hint="Rason Social"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/FondoAzul" />
+            <EditText
+                android:inputType="textPersonName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/TxtPCargo"
+                android:hint="Persona a Cargo"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/FondoAzul" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/TxtCelular"
+                android:hint="Celular"
+                android:layout_marginTop="10dp"
+                android:phoneNumber="true"
+                android:numeric="integer"
+                android:textColor="@color/FondoAzul" />
+            <EditText
+                android:inputType="textPersonName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/TxtCComercial"
+                android:hint="Centro Comercal"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/FondoAzul" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/TxtCiudad"
+                android:hint="Ciudad"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/FondoAzul" />
+            <EditText
+                android:inputType="textPostalAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/TxtAddress"
+                android:hint="Direccion"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/FondoAzul" />
+            <EditText
+                android:inputType="textEmailAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/TxtEmail"
+                android:hint="E-Mail"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/FondoAzul" />
+            <EditText
+                android:inputType="numberPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/TxtPwd"
+                android:hint="Contraseña para el Ingreso"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/FondoAzul" />
+            <CheckBox
+                android:text="Terminos y Condiciones "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ChBoxTerminos"
+                android:textColor="@color/FondoAzul"
+                android:layout_marginTop="5dp"
+                android:autoLink="web"
+                android:textAllCaps="false"
+                android:linksClickable="true" />
+            <Button
+                android:text="Registrar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/BtnRegister"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bntverde" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

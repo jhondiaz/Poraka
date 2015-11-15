@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    style="@style/StyleLayout"
+    android:padding="5dp">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout2"
+        android:background="@color/FondoBlando">
+        <ImageView
+            android:src="@drawable/icon"
+            android:id="@+id/ImgProduct"
+            android:layout_width="80dp"
+            android:layout_height="100dp" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:text="Celular Samsung Galaxy S6 Edge Plus - Pantalla 5.7&quot; - 32GB - Negro"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/TxtProduct"
+                android:textColor="@color/FondoAzul"
+                android:padding="10dp"
+                android:layout_weight="1" />
+            <TextView
+                android:text="JHON DIAZ GONZALEZ"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/TxtUser"
+                android:layout_marginTop="3dp"
+                android:textColor="@android:color/holo_green_dark"
+                android:drawableLeft="@drawable/ic_action_social_person"
+                android:gravity="center_vertical"
+                android:layout_weight="2" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout3">
+        <Button
+            android:text="01"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/BtnCount"
+            android:background="@drawable/bntamarillo" />
+        <Button
+            android:text="Enviar  Mi Precio"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/BtnAplicarOferta"
+            android:background="@drawable/bntverde"
+            android:layout_marginLeft="1dp"
+            android:drawableLeft="@drawable/ic_action_maps_local_offer"
+            android:gravity="center" />
+    </LinearLayout>
+    <TextView
+        android:text="Detalles..."
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView1"
+        android:padding="10dp"
+        android:layout_marginTop="1dp"
+        android:textColor="@color/FondoAzul"
+        android:drawableLeft="@drawable/ic_drawer_dark"
+        android:gravity="center_vertical"
+        android:background="@color/FondoBlando" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout4">
+        <WebView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/WebDetalis"
+            android:background="@color/background"
+            android:padding="10dp" />
+    </LinearLayout>
+</LinearLayout>
